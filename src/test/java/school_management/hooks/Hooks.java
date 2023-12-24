@@ -7,7 +7,16 @@ import school_management.utilities.Driver;
 
 import java.time.Duration;
 
+import static school_management.base_url.BaseUrl.setUp;
+
 public class Hooks {
+
+    @Before ("@API")
+    public static void beforeApi(){
+        setUp();
+    }
+
+
 
     @Before ("@UI")
     public static void before_ui(){
