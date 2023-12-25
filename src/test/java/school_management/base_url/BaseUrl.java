@@ -9,11 +9,11 @@ import static school_management.utilities.Authentication.generateToken;
 public class BaseUrl {
 
     public static RequestSpecification spec;
-    public static void setUp(){
+    public static void setUp(String username , String password){
         spec = new RequestSpecBuilder()
                 .setBaseUri("https://managementonschools.com/app")
                 .setContentType(ContentType.JSON)
-                .addHeader("Authorization", generateToken())
+                .addHeader("Authorization", generateToken(username,password))
                 .build();
     }
 }

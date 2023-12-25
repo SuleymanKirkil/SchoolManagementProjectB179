@@ -16,3 +16,5 @@ Feature: TC01_DeanController
     When sends get request and get response
     Then verifies status code is 200
     And verifies response body for Get Dean By id
+    And User deletes the created dean
+

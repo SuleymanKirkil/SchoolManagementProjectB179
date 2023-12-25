@@ -11,7 +11,7 @@ Feature: Admin creates Dean
     And Clicks on the Dean Management
     And Enters "Tom" in Name field
     And Enters "Sawyer" in SurName field
-    And Enters "İstanbul" in BirthPlace field
+    And Enters "Istanbul" in BirthPlace field
     And Enters "Female" in Gender field
     And Enters "05051975" in DateOfBirth field
     And Enters "524-456-7395" in Phone Number field
